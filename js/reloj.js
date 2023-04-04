@@ -16,7 +16,7 @@ function obtenerHora() {
 
   let pHora = document.getElementById("hora");
 
-  if (fecha.getHours < 12) {
+  if (fecha.getHours() < 12) {
     pHora.innerHTML = `${hora}:${minutos}:${segundos} AM`;
   } else {
     pHora.innerHTML = `${hora}:${minutos}:${segundos} PM`;
